@@ -8,6 +8,9 @@
 <tr>
 	<td><%= r.name %></td>
 	<td><%= r.description %></td>
-	<td><%= r.address %></td>
+	<td><%= r.full_address %></td>
 	<td><%= r.phone %></td>
+</tr>
 <% end %>
+</table>
+<%= link_to "Create New Restaurant", new_restaurant_path %>
