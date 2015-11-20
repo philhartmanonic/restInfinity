@@ -1,2 +1,18 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
+<h1><%= @restaurant.name %></h1>
+<table id="show">
+	<th>Name</th>
+	<th>Description</th>
+	<th>Address</th>
+	<th>Phone</th>
+
+	<tr>
+		<td><%= @restaurant.name %></td>
+		<td><%= @restaurant.description %></td>
+		<td><%= @restaurant.full_address %></td>
+		<td><%= @restaurant.phone %></td>
+	</tr>
+</table>
+<%= link_to "Create New Restaurant", new_restaurant_path %>
+<%= link_to "Edit This Restaurant", edit_restaurant_path(@restaurant) %>
+<%= link_to "Delete This Restaurant", @restaurant, method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "All Restaurants", restaurants_path %>
