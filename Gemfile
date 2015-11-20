@@ -17,6 +17,7 @@ gem 'better_errors'
 group :development, :test do
   gem 'byebug'
   gem 'pry'
+  gem 'better_errors'
 end
 
 group :development do
